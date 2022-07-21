@@ -349,4 +349,91 @@ header nav .nav-menu .cart .quantity.show-quantity {
 .products .row .col-md-3 {
   padding: 0 20px;
   margin-bottom: 60px;
+}
+
+.admin {
+  margin-top: 200px;
+}
+.admin .container {
+  position: relative;
+}
+.admin .container .add {
+  text-decoration: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.admin .container .add span::before {
+  content: attr(data-attr);
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  background: #c2964d;
+  color: #eee;
+  padding: 5px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  transform-origin: top;
+  transition: 0.5s;
+  transform: rotateX(90deg) translateY(-50%);
+}
+.admin .container .add:hover span::before {
+  transform: rotateX(0deg) translateY(0%);
+}
+.admin .container .add span::after {
+  content: attr(data-attr);
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  background: #444;
+  color: #eee;
+  padding: 5px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  transform-origin: bottom;
+  transition: 0.5s;
+  transform: rotateX(0deg) translateY(0%);
+}
+.admin .container .add:hover span::after {
+  transform: rotateX(90deg) translateY(50%);
+}
+.admin .container .search:focus {
+  box-shadow: none;
+  border-color: #eee;
+}
+.admin .container .icon-search {
+  background: gray;
+  border-color: gray;
+  cursor: pointer;
+}
+.admin .container .icon-search i {
+  color: #eee;
+  transition: all 0.5s;
+}
+.admin .container .icon-search i:hover {
+  transform: scale(1.2);
+}
+
+.table {
+  margin-top: 50px;
+}
+.table thead th {
+  background: #c2964d;
+  border: 1px solid #c2964d;
+  padding: 15px 0;
+}
+.table tbody td {
+  border: 1px solid #eee;
+  height: 100px;
+}
+
+.btn-gold {
+  background: #c2964d;
+  color: #eee;
+  border: 1px solid #c2964d;
+  padding: 6px 20px;
+}
+.btn-gold:hover {
+  background: #dfb46d;
+  color: #eee;
+  border: 1px solid #dfb46d;
 }/*# sourceMappingURL=main.css.map */
